@@ -19,6 +19,10 @@ library
                         , text                  == 1.2.*
                         , bytestring            == 0.10.*
 
+                        -- Monad transformers
+                        , mtl                   == 2.2.*
+                        , transformers          == 0.4.*
+
                         -- Lens
                         , lens                  == 4.13.*
 
