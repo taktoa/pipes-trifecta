@@ -3,47 +3,32 @@ author:                   Remy Goldschmidt
 version:                  0.0.1
 build-type:               Simple
 cabal-version:            >= 1.10
-category:                 Utility
+category:                 Pipes, Parser
 copyright:                2016 Remy Goldschmidt <taktoa@gmail.com>
 extra-source-files:       README.md
 maintainer:               taktoa@gmail.com
+homepage:                 https://github.com/taktoa/pipes-trifecta
+bug-reports:              https://github.com/taktoa/pipes-trifecta/issues
 license-file:             LICENSE.md
 license:                  MIT
 synopsis:                 An interface between "trifecta" and "pipes-parse".
 description:              An interface between "trifecta" and "pipes-parse".
 
+source-repository head
+type:     git
+location: https://github.com/taktoa/pipes-trifecta.git
+                          
 library
     build-depends:        base                  == 4.*
-
-                        -- Strings
-                        , text                  == 1.2.*
                         , bytestring            == 0.10.*
-
-                        -- Monad transformers
-                        , mtl                   == 2.2.*
-                        , transformers          == 0.4.*
-
-                        -- Lens
                         , lens                  == 4.13.*
-
-                        -- Pipes
-                        , pipes                 == 4.1.*
                         , pipes-parse           == 3.0.*
-
-                        -- Parsing
-                        , parsers               == 0.12.*
                         , trifecta              == 1.5.*
-
-                        -- Exceptions
-                        , exceptions            == 0.8.*
-
     default-language:     Haskell2010
     exposed-modules:      Pipes.Trifecta
     ghc-options:          -Wall
-                          -threaded
+                          -O2
                           -fno-warn-type-defaults
-                          -fno-warn-unused-imports
                           -fno-warn-unused-do-bind
     ghc-prof-options:     -auto-all -prof
     hs-source-dirs:       library
-    default-extensions:   OverloadedStrings
