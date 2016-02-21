@@ -25,6 +25,7 @@ library
                         , lens                  == 4.13.*
 
                         -- Pipes
+                        , pipes                 == 4.1.*
                         , pipes-parse           == 3.0.*
 
                         -- Parsing
