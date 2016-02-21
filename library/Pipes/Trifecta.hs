@@ -1,4 +1,4 @@
-module Pipes.Parsers where
+module Pipes.Trifecta where
 
 import qualified Data.Text               as Text
 

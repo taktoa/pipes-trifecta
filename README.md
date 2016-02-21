@@ -1,7 +1,6 @@
-# pipes-parsers
+# pipes-trifecta
 
-An interface between the Parsers from the `parsers` library and those of
-`pipes-parse`.
+An interface between `trifecta` and `pipes-parse`.
 
 ## Update to latest version of Cabal.
 ```sh

@@ -1,4 +1,4 @@
-name:                     pipes-parsers
+name:                     pipes-trifecta
 author:                   Remy Goldschmidt
 version:                  0.0.1
 build-type:               Simple
@@ -9,10 +9,8 @@ extra-source-files:       README.md
 maintainer:               taktoa@gmail.com
 license-file:             LICENSE.md
 license:                  MIT
-synopsis:                 An interface between the Parsers from the "parsers"
-                          library and those of "pipes-parse".
-description:              An interface between the Parsers from the "parsers"
-                          library and those of "pipes-parse".
+synopsis:                 An interface between "trifecta" and "pipes-parse".
+description:              An interface between "trifecta" and "pipes-parse".
 
 library
     build-depends:        base                  == 4.*
@@ -36,7 +34,7 @@ library
                         , exceptions            == 0.8.*
 
     default-language:     Haskell2010
-    exposed-modules:      Pipes.Parsers
+    exposed-modules:      Pipes.Trifecta
     ghc-options:          -Wall
                           -threaded
                           -fno-warn-type-defaults

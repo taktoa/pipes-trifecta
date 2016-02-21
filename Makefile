@@ -36,7 +36,7 @@ nix-shell: nix-init
 	make clean
 
 repl:
-	cabal repl lib:pipes-parsers
+	cabal repl lib:pipes-trifecta
 
 run:
 	cabal run --jobs .
