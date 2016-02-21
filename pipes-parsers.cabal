@@ -19,13 +19,13 @@ library
 
                         -- Strings
                         , text                  == 1.2.*
-                        , bytestring            == 1.2.*
+                        , bytestring            == 0.10.*
 
                         -- Lens
                         , lens                  == 4.13.*
 
                         -- Pipes
-                        , pipes-parse           == 4.1.*
+                        , pipes-parse           == 3.0.*
 
                         -- Parsing
                         , parsers               == 0.12.*
