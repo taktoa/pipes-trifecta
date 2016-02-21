@@ -1,0 +1,46 @@
+name:                     pipes-parsers
+author:                   Remy Goldschmidt
+version:                  0.0.1
+build-type:               Simple
+cabal-version:            >= 1.10
+category:                 Utility
+copyright:                2016 Remy Goldschmidt <taktoa@gmail.com>
+extra-source-files:       README.md
+maintainer:               taktoa@gmail.com
+license-file:             LICENSE.md
+license:                  MIT
+synopsis:                 An interface between the Parsers from the "parsers"
+                          library and those of "pipes-parse".
+description:              An interface between the Parsers from the "parsers"
+                          library and those of "pipes-parse".
+
+library
+    build-depends:        base                  == 4.*
+
+                        -- Strings
+                        , text                  == 1.2.*
+                        , bytestring            == 1.2.*
+
+                        -- Lens
+                        , lens                  == 4.13.*
+
+                        -- Pipes
+                        , pipes-parse           == 4.1.*
+
+                        -- Parsing
+                        , parsers               == 0.12.*
+                        , trifecta              == 1.5.*
+
+                        -- Exceptions
+                        , exceptions            == 0.8.*
+
+    default-language:     Haskell2010
+    exposed-modules:      Pipes.Parsers
+    ghc-options:          -Wall
+                          -threaded
+                          -fno-warn-type-defaults
+                          -fno-warn-unused-imports
+                          -fno-warn-unused-do-bind
+    ghc-prof-options:     -auto-all -prof
+    hs-source-dirs:       library
+    default-extensions:   OverloadedStrings
